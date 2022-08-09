@@ -9,7 +9,7 @@
     
     <title>
         
-            test2 |
+            Linux下使用hexo搭建博客 |
         
         The Safe Haven Loop
     </title>
@@ -136,7 +136,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">test2</span>
+            <span class="title-hover-animation">Linux下使用hexo搭建博客</span>
         </div>
 
         
@@ -155,8 +155,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-08-09 02:02:51</span>
-        <span class="mobile">2022-08-09 02:02</span>
+        <span class="pc">2022-08-09 13:57:30</span>
+        <span class="mobile">2022-08-09 13:57</span>
     </span>
     
     
@@ -177,7 +177,58 @@
         
 
         <div class="article-content markdown-body">
-            <p><img lazyload src="/images/loading.svg" data-src="https://tvax2.sinaimg.cn/large/0083CpMNgy1h4zx68m8prj31e00xc4kx.jpg" alt="bg"></p>
+            <p>本文将介绍如何在linux下利用 <code>hexo</code> +<code>Github Pages</code> 搭建一个简单的个人博客，内容包括<code>Git</code>,<code>Node.js</code>的安装及其使用，以及在搭建博客时碰见的问题以及解决方法。</p>
+<h2 id="1-Git的下载安装"><a href="#1-Git的下载安装" class="headerlink" title="1.Git的下载安装"></a>1.<strong>Git</strong>的下载安装</h2><pre><code>安装Git
+在终端输入
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
+
+安装完成后可以输入`git --version`验证是否安装成功（如输出版本号则为安装成功）
+</code></pre>
+<p><img lazyload src="/images/loading.svg" data-src="https://tva3.sinaimg.cn/large/0083CpMNgy1h50hsu33stj30me0gnjsk.jpg" alt="gitverson"></p>
+<h2 id="2-Node-js的下载安装"><a href="#2-Node-js的下载安装" class="headerlink" title="2.Node.js的下载安装"></a>2.<strong>Node.js</strong>的下载安装</h2><pre><code>使用snap进行安装
+在终端输入
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install node --classic</span><br></pre></td></tr></table></figure>
+-官网下载安装
+进入node的官网 &lt;https://nodejs.org/zh-cn/&gt;
+点击长期维护版本
+</code></pre>
+<p><img lazyload src="/images/loading.svg" data-src="https://tva2.sinaimg.cn/large/0083CpMNgy1h50iqmg1mzj31ct0ujk8a.jpg" alt="nodejs01">	<br>    解压文件<br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf node-v16.16.0-linux-x64.tar.xz</span><br></pre></td></tr></table></figure><br>    进入目录<br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd node-v16.16.0-linux-x64/bin</span><br></pre></td></tr></table></figure><br>    验证是否安装成功<br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><br><img lazyload src="/images/loading.svg" data-src="https://tvax1.sinaimg.cn/large/0083CpMNgy1h50ih6rgw0j30me0gnab2.jpg" alt="nodejs02"></p>
+<h2 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h2><p>git和node.js安装完成后，即可使用npm安装Hexo。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，执行以下命令，Hexo将会在指定文件夹中新建所需文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;你自己的博客文件夹&gt;</span><br><span class="line">cd &lt;你自己的博客文件夹&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p><img lazyload src="/images/loading.svg" data-src="https://tva4.sinaimg.cn/large/0083CpMNgy1h50lnd8z9wj30me0gnn62.jpg" alt="hexoinstall"><br>生成<strong>静态文件</strong>到默认设置的<code>public</code>文件夹。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>启动本地服务器，用于预览主题。默认地址：<a class="link" target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/<i class="fas fa-external-link-alt"></i></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><img lazyload src="/images/loading.svg" data-src="https://tvax4.sinaimg.cn/large/0083CpMNgy1h50lt7u6p1j30me0gnqcc.jpg" alt="hexos"><br>打开<a class="link" target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000<i class="fas fa-external-link-alt"></i></a><br><img lazyload src="/images/loading.svg" data-src="https://tvax1.sinaimg.cn/large/0083CpMNgy1h50lue8uzxj31cv0rcqkx.jpg" alt="4000"><br>至此，博客的本地静态文件生成完毕。</p>
+<h2 id="4-为博客安装主题"><a href="#4-为博客安装主题" class="headerlink" title="4.为博客安装主题"></a>4.为博客安装主题</h2><p>打开<code>hexo-theme</code><a class="link" target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/<i class="fas fa-external-link-alt"></i></a><br>选择自己喜欢的主题，然后根据主题使用手册指引安装主题到<code>themes</code>文件夹<br><em><strong>以keep主题为例</strong></em></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><del>如果使用 Hexo 5.0 或更高版本，最简单的安装方式是通过 npm：<br>打开博客所在文件夹进入其终端，键入</del><br>已失效</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-keep</span><br></pre></td></tr></table></figure>
+<p>或者使用<code>git</code>clone整个keep主题仓库：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/XPoet/hexo-theme-keep themes/keep</span><br></pre></td></tr></table></figure>
+<p><img lazyload src="/images/loading.svg" data-src="https://tvax1.sinaimg.cn/large/0083CpMNgy1h50maevxd4j30me0gnqbh.jpg" alt="keppinstall"></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>安装完成后打开hexo配置文件<code>_config.yml</code> 将<code>theme</code>设置为<code>keep</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: keep</span><br></pre></td></tr></table></figure>
+<p><img lazyload src="/images/loading.svg" data-src="https://tva2.sinaimg.cn/large/0083CpMNgy1h50mcib81rj31560n9k2k.jpg" alt="keeptheme"><br>终端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+<p>如果更改之后碰见主题还是默认的情况，将<code>themes</code>文件夹中的<code>keep</code>文件夹删除后重新再终端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/XPoet/hexo-theme-keep themes/keep</span><br></pre></td></tr></table></figure>
+<p>问题解决<br><img lazyload src="/images/loading.svg" data-src="https://tvax4.sinaimg.cn/large/0083CpMNgy1h50moimasbj31ct0rndl1.jpg" alt="keepsite"></p>
+<h3 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h3><p>参考keep官方主题使用手册指引<a class="link" target="_blank" rel="noopener" href="https://keep-docs.xpoet.cn/usage-tutorial/configuration-guide.html#base-info">https://keep-docs.xpoet.cn/usage-tutorial/configuration-guide.html#base-info<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="部署博客到github上"><a href="#部署博客到github上" class="headerlink" title="部署博客到github上"></a>部署博客到github上</h2><p><a class="link" target="_blank" rel="noopener" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=/&source=header-home">注册<i class="fas fa-external-link-alt"></i></a>或<a class="link" target="_blank" rel="noopener" href="https://github.com/login?return_to=https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%252F&source=header-home">登陆<i class="fas fa-external-link-alt"></i></a>github账号</p>
+<p>新建一个<code>Repositories</code>，并命名为&lt;你的github账号名字&gt;.github.io<br><img lazyload src="/images/loading.svg" data-src="https://tvax1.sinaimg.cn/large/0083CpMNgy1h50myh6kxij315y0q247u.jpg" alt="github"></p>
+<h3 id="安装hexo-deployer-git"><a href="#安装hexo-deployer-git" class="headerlink" title="安装hexo-deployer-git"></a>安装hexo-deployer-git</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>修改根目录下的<code>_config.yml</code>文件，配置github相关信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:qaqmal/qaqmal.github.io.git</span><br><span class="line">  brach: main</span><br></pre></td></tr></table></figure>
+<p>设置user.name和user.email配置信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>生成ssh密钥文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>然后直接三个回车即可，默认不需要设置密码<br>然后找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复制<br>打开<a class="link" href="https://link.zhihu.com/?target=https://github.com/settings/keys">GitHub_Settings_keys<i class="fas fa-external-link-alt"></i></a> 页面，新建new SSH Key</p>
+<p>Title为标题，任意填即可，将刚刚复制的id_rsa.pub内容粘贴进去，最后点击Add SSH key。</p>
+<p>  部署到GitHub</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -185,11 +236,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：test2</li>
+        <li>Post title：Linux下使用hexo搭建博客</li>
         <li>Post author：kuroko</li>
-        <li>Create time：2022-08-09 02:02:51</li>
+        <li>Create time：2022-08-09 13:57:30</li>
         <li>
-            Post link：https://lassksy.github.io/2022/08/09/test2/
+            Post link：https://lassksy.github.io/2022/08/09/Linux下使用hexo搭建博客/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -205,29 +256,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2022/08/09/TESTDemo/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">TESTDemo</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/08/08/hello-world/"
+                           href="/2022/08/09/TESTDemo/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">TESTDemo</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -435,7 +471,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Git%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">1.Git的下载安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Node-js%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">2.Node.js的下载安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AE%89%E8%A3%85hexo"><span class="nav-number">3.</span> <span class="nav-text">3.安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%B8%BA%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">4.为博客安装主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">4.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">4.2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89"><span class="nav-number">4.3.</span> <span class="nav-text">自定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0github%E4%B8%8A"><span class="nav-number">5.</span> <span class="nav-text">部署博客到github上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo-deployer-git"><span class="nav-number">5.1.</span> <span class="nav-text">安装hexo-deployer-git</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
