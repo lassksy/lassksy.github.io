@@ -6,7 +6,7 @@
   <link href="https://lassksy.github.io/atom.xml" rel="self"/>
   
   <link href="https://lassksy.github.io/"/>
-  <updated>2022-08-09T12:29:00.668Z</updated>
+  <updated>2022-08-10T04:26:26.222Z</updated>
   <id>https://lassksy.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搭建博客后图片不显示的解决方法</title>
+    <link href="https://lassksy.github.io/2022/08/10/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%90%8E%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://lassksy.github.io/2022/08/10/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%90%8E%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <published>2022-08-10T04:10:45.000Z</published>
+    <updated>2022-08-10T04:26:26.222Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文将介绍在搭建博客后图片不显示两种解决方法</p><h2 id="1-使用微博图床上传本地图片至网络"><a href="#1-使用微博图床上传本地图片至网络" class="headerlink" title="1.使用微博图床上传本地图片至网络"></a>1.使用微博图床上传本地图片至网络</h2><blockquote><p>chrome扩展商店 <a class="link" href="https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN">https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN<i class="fas fa-external-link-alt"></i></a></p></blockquote><p><img lazyload src="/images/loading.svg" data-src="https://tva4.sinaimg.cn/large/0083CpMNgy1h51jro01nwj30ui0m0gpr.jpg" alt="gnome-shell-screenshot-YR14Q1"></p><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><h3 id="不支持svg格式文件"><a href="#不支持svg格式文件" class="headerlink" title="不支持svg格式文件"></a>不支持svg格式文件</h3><h2 id="2-使用PicX上传本地图片至网络"><a href="#2-使用PicX上传本地图片至网络" class="headerlink" title="2.使用PicX上传本地图片至网络"></a>2.使用PicX上传本地图片至网络</h2><blockquote><p>在线使用入口 <a class="link" href="https://picx.xpoet.cn/">https://picx.xpoet.cn<i class="fas fa-external-link-alt"></i></a></p></blockquote><p><img lazyload src="/images/loading.svg" data-src="https://git.poker/lassksy/image-hosting/blob/master/20220810/gnome-shell-screenshot-LYMQQ1.422olpkh03m0.png?raw=true" alt="gnome-shell-screenshot-LYMQQ1"></p><h3 id="只需选择一个-GitHub-仓库作为图床，然后在-PicX-官网-完成-Token-绑定和相应配置就能使用了。"><a href="#只需选择一个-GitHub-仓库作为图床，然后在-PicX-官网-完成-Token-绑定和相应配置就能使用了。" class="headerlink" title="只需选择一个 GitHub 仓库作为图床，然后在 PicX 官网 完成 Token 绑定和相应配置就能使用了。"></a>只需选择一个 GitHub 仓库作为图床，然后在 PicX 官网 完成 Token 绑定和相应配置就能使用了。</h3><h3 id="官方文档-gt-gt-https-picx-docs-xpoet-cn"><a href="#官方文档-gt-gt-https-picx-docs-xpoet-cn" class="headerlink" title="官方文档 &gt;&gt; https://picx-docs.xpoet.cn"></a>官方文档 &gt;&gt; <a class="link" href="https://picx-docs.xpoet.cn/">https://picx-docs.xpoet.cn<i class="fas fa-external-link-alt"></i></a></h3><h3 id="通过阅读官方文档的快速开始教程，可帮助你迅速上手-PicX-图床-lt-https-picx-docs-xpoet-cn-tutorial-get-start-html"><a href="#通过阅读官方文档的快速开始教程，可帮助你迅速上手-PicX-图床-lt-https-picx-docs-xpoet-cn-tutorial-get-start-html" class="headerlink" title="通过阅读官方文档的快速开始教程，可帮助你迅速上手 PicX 图床 &lt;https://picx-docs.xpoet.cn/tutorial/get-start.html"></a>通过阅读官方文档的快速开始教程，可帮助你迅速上手 PicX 图床 &lt;<a class="link" href="https://picx-docs.xpoet.cn/tutorial/get-start.html">https://picx-docs.xpoet.cn/tutorial/get-start.html<i class="fas fa-external-link-alt"></i></a></h3><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，博客图片不显示的问题成功解决。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本文将介绍在搭建博客后图片不显示两种解决方法&lt;/p&gt;
+&lt;h2 id=&quot;1-使用微博图床上传本地图片至网络&quot;&gt;&lt;a href=&quot;#1-使用微博图床上传本地图片至网络&quot; class=&quot;headerlink&quot; title=&quot;1.使用微博图床上传本地图片至网络&quot;&gt;&lt;/a&gt;1.使用微</summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="https://lassksy.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo中常见的命令</title>

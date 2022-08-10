@@ -9,7 +9,7 @@
     
     <title>
         
-            hexo中常见的命令 |
+            hexo搭建博客后图片不显示的解决方法 |
         
         The Safe Haven Loop
     </title>
@@ -150,7 +150,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">hexo中常见的命令</span>
+            <span class="title-hover-animation">hexo搭建博客后图片不显示的解决方法</span>
         </div>
 
         
@@ -169,8 +169,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-08-09 20:06:30</span>
-        <span class="mobile">2022-08-09 20:06</span>
+        <span class="pc">2022-08-10 12:10:45</span>
+        <span class="mobile">2022-08-10 12:10</span>
     </span>
     
     
@@ -202,61 +202,28 @@
         
 
         <div class="article-content markdown-body">
-            <h2 id="HEXO中几个常见的命令"><a href="#HEXO中几个常见的命令" class="headerlink" title="HEXO中几个常见的命令"></a>HEXO中几个常见的命令</h2><p>本文将介绍几个hexo常用常见的几个指令。</p>
-<h3 id="1-init"><a href="#1-init" class="headerlink" title="1.init"></a>1.init</h3><p>新建一个网站，如果没有<code>folder</code>,Hexo默认在当前文件夹建立网站</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
-<h3 id="2-new"><a href="#2-new" class="headerlink" title="2.new"></a>2.new</h3><p>新建一篇文章。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>指令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-p</code>, <code>--path</code></td>
-<td>自定义新文章的路径</td>
-</tr>
-<tr>
-<td><code>r</code>, <code>--replace</code></td>
-<td>如果存在同名文章，将其替换</td>
-</tr>
-<tr>
-<td><code>s</code>, <code>--slug</code></td>
-<td>文章的Slug，作为新文章的文件名和发布后的URL</td>
-</tr>
-</tbody></table>
-<h3 id="3-generate"><a href="#3-generate" class="headerlink" title="3.generate"></a>3.generate</h3><p>生成本地静态文件。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<p>可简写为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+            <p>本文将介绍在搭建博客后图片不显示两种解决方法</p>
+<h2 id="1-使用微博图床上传本地图片至网络"><a href="#1-使用微博图床上传本地图片至网络" class="headerlink" title="1.使用微博图床上传本地图片至网络"></a>1.使用微博图床上传本地图片至网络</h2><blockquote>
+<p>chrome扩展商店 <a class="link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN">https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+<p><img lazyload src="/images/loading.svg" data-src="https://tva4.sinaimg.cn/large/0083CpMNgy1h51jro01nwj30ui0m0gpr.jpg" alt="gnome-shell-screenshot-YR14Q1"></p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><h3 id="不支持svg格式文件"><a href="#不支持svg格式文件" class="headerlink" title="不支持svg格式文件"></a>不支持svg格式文件</h3><h2 id="2-使用PicX上传本地图片至网络"><a href="#2-使用PicX上传本地图片至网络" class="headerlink" title="2.使用PicX上传本地图片至网络"></a>2.使用PicX上传本地图片至网络</h2><blockquote>
+<p>在线使用入口 <a class="link" target="_blank" rel="noopener" href="https://picx.xpoet.cn/">https://picx.xpoet.cn<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+<p><img lazyload src="/images/loading.svg" data-src="https://git.poker/lassksy/image-hosting/blob/master/20220810/gnome-shell-screenshot-LYMQQ1.422olpkh03m0.png?raw=true" alt="gnome-shell-screenshot-LYMQQ1"></p>
+<h3 id="只需选择一个-GitHub-仓库作为图床，然后在-PicX-官网-完成-Token-绑定和相应配置就能使用了。"><a href="#只需选择一个-GitHub-仓库作为图床，然后在-PicX-官网-完成-Token-绑定和相应配置就能使用了。" class="headerlink" title="只需选择一个 GitHub 仓库作为图床，然后在 PicX 官网 完成 Token 绑定和相应配置就能使用了。"></a>只需选择一个 GitHub 仓库作为图床，然后在 PicX 官网 完成 Token 绑定和相应配置就能使用了。</h3><h3 id="官方文档-gt-gt-https-picx-docs-xpoet-cn"><a href="#官方文档-gt-gt-https-picx-docs-xpoet-cn" class="headerlink" title="官方文档 &gt;&gt; https://picx-docs.xpoet.cn"></a>官方文档 &gt;&gt; <a class="link" target="_blank" rel="noopener" href="https://picx-docs.xpoet.cn/">https://picx-docs.xpoet.cn<i class="fas fa-external-link-alt"></i></a></h3><h3 id="通过阅读官方文档的快速开始教程，可帮助你迅速上手-PicX-图床-lt-https-picx-docs-xpoet-cn-tutorial-get-start-html"><a href="#通过阅读官方文档的快速开始教程，可帮助你迅速上手-PicX-图床-lt-https-picx-docs-xpoet-cn-tutorial-get-start-html" class="headerlink" title="通过阅读官方文档的快速开始教程，可帮助你迅速上手 PicX 图床 &lt;https://picx-docs.xpoet.cn/tutorial/get-start.html"></a>通过阅读官方文档的快速开始教程，可帮助你迅速上手 PicX 图床 &lt;<a class="link" target="_blank" rel="noopener" href="https://picx-docs.xpoet.cn/tutorial/get-start.html">https://picx-docs.xpoet.cn/tutorial/get-start.html<i class="fas fa-external-link-alt"></i></a></h3><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，博客图片不显示的问题成功解决。</p>
 
-<h3 id="4-publish"><a href="#4-publish" class="headerlink" title="4.publish"></a>4.publish</h3><p>发表草稿。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo pubish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="5-server"><a href="#5-server" class="headerlink" title="5.server"></a>5.server</h3><p>启动本地服务器，默认访问地址为<a class="link" target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/<i class="fas fa-external-link-alt"></i></a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>可简写为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="6-deploy"><a href="#6-deploy" class="headerlink" title="6.deploy"></a>6.deploy</h3><p>部署网站到服务器。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p>可简写为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="7-clean"><a href="#7-clean" class="headerlink" title="7.clean"></a>7.clean</h3><p>清除缓存文件（<code>db.json</code>）和静态文件（<code>public</code>）。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<h2 id="资料来源https-hexo-io-zh-cn-docs-commands"><a href="#资料来源https-hexo-io-zh-cn-docs-commands" class="headerlink" title="资料来源https://hexo.io/zh-cn/docs/commands"></a>资料来源<a class="link" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands<i class="fas fa-external-link-alt"></i></a></h2>
         </div>
 
         
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：hexo中常见的命令</li>
+        <li>本文标题：hexo搭建博客后图片不显示的解决方法</li>
         <li>本文作者：kuroko</li>
-        <li>创建时间：2022-08-09 20:06:30</li>
+        <li>创建时间：2022-08-10 12:10:45</li>
         <li>
-            本文链接：https://lassksy.github.io/2022/08/09/hexo中常见的命令/
+            本文链接：https://lassksy.github.io/2022/08/10/hexo搭建博客后图片不显示的解决方法/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -280,29 +247,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2022/08/10/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%90%8E%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">hexo搭建博客后图片不显示的解决方法</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/08/09/Linux%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+                           href="/2022/08/09/hexo%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E5%91%BD%E4%BB%A4/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Linux下使用hexo搭建博客</span>
+                                <span class="post-nav-title-item">hexo中常见的命令</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -519,7 +471,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HEXO%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">HEXO中几个常见的命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-init"><span class="nav-number">1.1.</span> <span class="nav-text">1.init</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-new"><span class="nav-number">1.2.</span> <span class="nav-text">2.new</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-generate"><span class="nav-number">1.3.</span> <span class="nav-text">3.generate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-publish"><span class="nav-number">1.4.</span> <span class="nav-text">4.publish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-server"><span class="nav-number">1.5.</span> <span class="nav-text">5.server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-deploy"><span class="nav-number">1.6.</span> <span class="nav-text">6.deploy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-clean"><span class="nav-number">1.7.</span> <span class="nav-text">7.clean</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%84%E6%96%99%E6%9D%A5%E6%BA%90https-hexo-io-zh-cn-docs-commands"><span class="nav-number">2.</span> <span class="nav-text">资料来源https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;commands</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BD%BF%E7%94%A8%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%87%B3%E7%BD%91%E7%BB%9C"><span class="nav-number">1.</span> <span class="nav-text">1.使用微博图床上传本地图片至网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E7%82%B9"><span class="nav-number">1.1.</span> <span class="nav-text">缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E6%94%AF%E6%8C%81svg%E6%A0%BC%E5%BC%8F%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">不支持svg格式文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BD%BF%E7%94%A8PicX%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%87%B3%E7%BD%91%E7%BB%9C"><span class="nav-number">2.</span> <span class="nav-text">2.使用PicX上传本地图片至网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AA%E9%9C%80%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA-GitHub-%E4%BB%93%E5%BA%93%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8-PicX-%E5%AE%98%E7%BD%91-%E5%AE%8C%E6%88%90-Token-%E7%BB%91%E5%AE%9A%E5%92%8C%E7%9B%B8%E5%BA%94%E9%85%8D%E7%BD%AE%E5%B0%B1%E8%83%BD%E4%BD%BF%E7%94%A8%E4%BA%86%E3%80%82"><span class="nav-number">2.1.</span> <span class="nav-text">只需选择一个 GitHub 仓库作为图床，然后在 PicX 官网 完成 Token 绑定和相应配置就能使用了。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-gt-gt-https-picx-docs-xpoet-cn"><span class="nav-number">2.2.</span> <span class="nav-text">官方文档 &gt;&gt; https:&#x2F;&#x2F;picx-docs.xpoet.cn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E9%98%85%E8%AF%BB%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E7%9A%84%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E5%B8%AE%E5%8A%A9%E4%BD%A0%E8%BF%85%E9%80%9F%E4%B8%8A%E6%89%8B-PicX-%E5%9B%BE%E5%BA%8A-lt-https-picx-docs-xpoet-cn-tutorial-get-start-html"><span class="nav-number">2.3.</span> <span class="nav-text">通过阅读官方文档的快速开始教程，可帮助你迅速上手 PicX 图床 &lt;https:&#x2F;&#x2F;picx-docs.xpoet.cn&#x2F;tutorial&#x2F;get-start.html</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol>
     </div>
 </div>
         </aside>
